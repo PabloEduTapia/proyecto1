@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="utf-8">
+    <title>DaftPunk</title>
+    <link rel="stylesheet" type="text/css" href="style.css"></link>
+  </head>
+  <body>
+    <div class="general">
+      <nav>
+        <a href="index.html">BACK TO DAFTPUNK.COM</a>   
+      </nav>
+      <h1>Registrarse</h1>
+      <h2>Mantente al tanto de nuestras actividades completando el siguiente formulario.</h2>
+      <hr />
+      <br>
+      <form action="js/processData.js" method="GET" enctype="multipart/form-data" >
+        
+        <label>Nombre:</label>
+        <input type="text" name="nombre" size="35">
+        <br><br>
+        <label>Apellido:</label> 
+        <input type="text" name="apellido" size="35">
+        <br><br>
+        <Label>Edad:</Label> 
+        <input type="number" name="age">
+        <br><br>
+        <Label>Email:</Label> 
+        <input type="email" name="email" value="@">
+        <br><br>
+        <label>Contraseña:</label>
+        <input type="password" name="contraseña">
+
+        <hr />
+
+        <label>Tiene alguna sugerencia:</label>
+        <br />
+        <textarea rows="5" cols="40" name="reseña">Escriba aquí...</textarea>
+
+
+        <hr />
+
+        <h3>Sexo</h3>
+        <label>hombre</label>
+        <input type="radio" name="sexo" value="hombre" />
+        <label>mujer</label>
+        <input type="radio" name="sexo" value="mujer" />
+
+        <hr />
+
+        
+        <label>Como nos conociste:</label>
+        <select name="conociste">
+          <option value="tv">En la radio/TV</option>
+          <option value="internet">A traves de internet</option>
+          <option value="amigo">A traves de un amigo</option>
+          <option value="otro">Otros</option>
+        </select>
+        <hr />
+
+        <label>Acepta términos y condiciones</label>
+        <input type="checkbox" name="acepta" value="1" />
+
+        
+
+
+        <hr />
+
+        <input type="submit" value="Enviar"/>
+        <input type="reset" value="Reset"/>   
+      </form>
+  </div>
+  </body>
+</html>
